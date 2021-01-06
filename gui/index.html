@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Recorder.js demo with record, stop and pause - addpipe.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <h1 style="text-align: center; font-size: 400%">SIMPLE SPEECH RECOGNITION</h1>
+</header>
+<div id="left">
+    <h2 style="font-size: 200%">ĐỀ TÀI NHẬN DẠNG GIỌNG NÓI - TỪ ĐƠN</h2>
+    <hr>
+    <hr>
+    <p style="font-size: 20px"><strong>GHI ÂM:</strong></p>
+    <div id="controls">
+        <button id="recordButton">Record</button>
+        <button id="pauseButton" disabled>Pause</button>
+        <button id="stopButton" disabled>Stop</button>
+    </div>
+    <br>
+    <p style="font-size: 20px"><strong>HOẶC UPLOAD FILE</strong></p>
+    <div id="controls">
+        <input id="upload" type="file" style="display: none"/>
+        <button id="buttonid" style="width: 400%" form="upload">Upload File</button>
+    </div>
+    <div id="formats"><strong>LƯU Ý: GHI ÂM LẤY TỐT NHẤT Ở 1 GIÂY.</strong></div>
+    <p style="font-size: 150%"><strong>TEST GHI ÂM</strong></p>
+    <ol id="recordingsList"></ol>
+    <p style="font-size: 150%"><strong>TEST UPLOAD</strong></p>
+    <audio id="audio" controls>
+        <source src="" id="src" style="max-width: 750px"/>
+    </audio>
+    <div id="controls">
+        <button id="submit" onclick="apiService()">Submit</button>
+    </div>
+    <div id="controls">
+        <p>
+        <script>
+            console.log(this.a);
+        </script></p>
+    </div>
+</div>
+<div id="right">
+    <ul>
+        <li>HUỲNH NGỌC NHÂN</li>
+        <li>NGUYỄN THÀNH LONG</li>
+        <li>NGUYỄN MINH HIẾU</li>
+    </ul>
+</div>
+
+<!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+<script src="js/app.js"></script>
+<script src="js/listener.js"></script>
+
+</body>
+</html>
